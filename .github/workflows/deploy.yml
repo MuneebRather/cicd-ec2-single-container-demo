@@ -4,6 +4,11 @@ on:
   push:
     branch:
       - main
+    paths-ignore:
+      - '**.md'
+      - 'screenshots/**'
+      - '.gitignore'
+      - '.dockerignore'
 
 jobs:
   deploy:
